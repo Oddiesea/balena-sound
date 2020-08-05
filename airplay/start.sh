@@ -13,7 +13,7 @@ fi
 
 # Set the device broadcast name for AirPlay
 if [[ -z "$DEVICE_NAME" ]]; then
-  DEVICE_NAME=$(printf "balenaSound Airplay %s" $(hostname | cut -c -4))
+  DEVICE_NAME=$BLUETOOTH_DEVICE_NAME
 fi
 
 # Use pipe output if multi room is enabled
